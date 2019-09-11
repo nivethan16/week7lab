@@ -7,8 +7,8 @@ const url = 'mongodb://localhost:27017/week5';
 //let col=null
 
 let mongoose=require('mongoose')
-let Developer=require('./models/Developer')
-let Task =require('./models/Task')
+let Developer=require('./models/developer')
+let Task =require('./models/task')
 
 mongoose.connect(url, {useNewUrlParser: true,useUnifiedTopology: true }, function (err, client) {
     if (err) {
